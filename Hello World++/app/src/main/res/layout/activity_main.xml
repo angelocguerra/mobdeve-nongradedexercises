@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFront"
+        android:layout_width="129dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/displayTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/memoji" />
+
+    <Button
+        android:id="@+id/displayBtn"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0A84FF"
+        android:backgroundTintMode="add"
+        android:fontFamily="sans-serif-medium"
+        android:foregroundTint="#B83030"
+        android:text="Display"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayTv" />
+
+    <TextView
+        android:id="@+id/displayTv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Hello World!"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/displayBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFront" />
+
+    <Button
+        android:id="@+id/printBtn"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="187dp"
+        android:backgroundTint="#34C759"
+        android:text="Print"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEt" />
+
+    <EditText
+        android:id="@+id/inputEt"
+        android:layout_width="236dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter a name"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/printBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
